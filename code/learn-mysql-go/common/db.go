@@ -9,7 +9,7 @@ Note:
 */
 
 func OpenDB() *sql.DB {
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/test_db")
+	db, err := sql.Open("mysql", "root:root@tcp(127.0.0.1:3306)/test_db")
 	if err != nil {
 		panic(err)
 	}
